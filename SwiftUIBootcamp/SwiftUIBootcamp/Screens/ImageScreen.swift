@@ -15,6 +15,7 @@ struct ImageScreen: View {
                 .scaledToFit()
                 .foregroundStyle(.red)
                 .frame(width: 300, height: 200)
+//                .clipped()
             
             Image("rock")
                 .resizable()
