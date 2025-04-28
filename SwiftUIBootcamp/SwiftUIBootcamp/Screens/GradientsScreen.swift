@@ -16,7 +16,11 @@ struct GradientsScreen: View {
             
             Circle()
                 .fill(RadialGradient(colors: [.blue, .yellow], center: .center, startRadius: 0, endRadius: 100))
-                .frame(width: 300, height: 100)
+                .frame(width: 200, height: 200)
+            
+            Circle()
+                .fill(AngularGradient(gradient: Gradient(colors: [.red, .black, .yellow]), center: .center))
+                .frame(width: 200, height: 200)
             
         }
     }

@@ -9,13 +9,13 @@ import SwiftUI
 
 struct ShapeScreen: View {
     var body: some View {
-//        Circle()
+        Circle()
 //        Rectangle()
-        RoundedRectangle(cornerRadius: 20)
-            .trim(from: 0, to: 0.7)
+//        RoundedRectangle(cornerRadius: 20)
+//            .trim(from: 0, to: 0.7)
             .fill(.blue)
             .stroke(.green, style: StrokeStyle(lineWidth: 10, lineCap: .butt, dash: [10]))
-            .frame(width: 300, height: 200)       
+            .frame(width: 300, height: 200)
     }
 }
 
