@@ -22,7 +22,7 @@ struct TextScreen: View {
             .truncationMode(.middle)
             .frame(maxWidth: 200, maxHeight: 200, alignment: .center)
             .minimumScaleFactor(0.1)
-        
+            .textSelection(.enabled)
     }
 }
 
