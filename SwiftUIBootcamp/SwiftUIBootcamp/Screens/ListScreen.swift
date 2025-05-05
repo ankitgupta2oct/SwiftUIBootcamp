@@ -25,7 +25,32 @@ struct ListScreen: View {
                     .onMove(perform: onMoveItem)
                     .listRowBackground(Color.yellow.opacity(0.4))
                 }
+                .background(.red)
                 .listStyle(.plain)
+                
+                List {
+                    ForEach(fruits, id: \.self) { fruit in
+                        Text(fruit)
+                            .swipeActions(edge: .trailing, allowsFullSwipe: true) {
+                                Button("Save") {
+                                    
+                                }
+                                .tint(.green)
+                                
+                                Button("Delete") {
+                                    
+                                }
+                                .tint(.red)
+                                
+                                Button("Archive") {
+                                    
+                                }
+                                .tint(.orange)
+                            }
+                    }
+                }
+                .listStyle(.plain)
+                .background(.green)
             }
             .navigationTitle("Fruits233")
             .toolbar {
